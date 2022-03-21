@@ -21,7 +21,7 @@ function callMovieInformation(url){
 }
 
 for(let val of idArr){
-    var apiurl='http://www.omdbapi.com/?apikey=5d12a71c&i='+val;
+    var apiurl='https://www.omdbapi.com/?apikey=5d12a71c&i='+val;
     callMovieInformation(apiurl);
 }
 
