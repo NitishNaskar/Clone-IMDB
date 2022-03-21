@@ -23,7 +23,6 @@ function searchApiCall(callapi){
     var xhrRequest=new XMLHttpRequest();
     xhrRequest.onload=function(){
         var resObj=JSON.parse(xhrRequest.response);
-        console.log(resObj["Response"]);
         if(resObj["Response"]=="True"){
             var SearchArr=resObj.Search;
             var innerhtmltext="";
@@ -52,7 +51,6 @@ document.addEventListener('click', function(event) {
             var titleSer=eventInput.target.value;
             if(titleSer.length>1 && titleSer.length%2==0){
                 var callapi='https://www.omdbapi.com/?apikey=5d12a71c&s='+titleSer;
-                console.log(callapi);
                 searchApiCall(callapi);
             }
         });
