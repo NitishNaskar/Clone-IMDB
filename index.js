@@ -51,7 +51,7 @@ document.addEventListener('click', function(event) {
         ignoreClickOnMeElement.addEventListener('input', function(eventInput) {
             var titleSer=eventInput.target.value;
             if(titleSer.length>1 && titleSer.length%2==0){
-                var callapi='http://www.omdbapi.com/?apikey=5d12a71c&s='+titleSer;
+                var callapi='https://www.omdbapi.com/?apikey=5d12a71c&s='+titleSer;
                 console.log(callapi);
                 searchApiCall(callapi);
             }
@@ -105,9 +105,9 @@ while(danArr.length<4){
 }
 
 for(let i=0;i<4;i++){
-    var apiurl='http://www.omdbapi.com/?apikey=5d12a71c&i='+danArr[i];
+    var apiurl='https://www.omdbapi.com/?apikey=5d12a71c&i='+danArr[i];
     callMovieInformation(cardIdNew[i],apiurl);
-    apiurl='http://www.omdbapi.com/?apikey=5d12a71c&i='+hindiMovieId[i];
+    apiurl='https://www.omdbapi.com/?apikey=5d12a71c&i='+hindiMovieId[i];
     callMovieInformation(cardIdHindi[i],apiurl);
 }
 
