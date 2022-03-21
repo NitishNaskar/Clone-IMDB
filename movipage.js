@@ -1,5 +1,5 @@
 var url=window.location.href;
-var callapi='http://www.omdbapi.com/?apikey=5d12a71c&i='+url.split("?")[1];
+var callapi='https://www.omdbapi.com/?apikey=5d12a71c&i='+url.split("?")[1];
 
 
 function addTofavourite(callmId){
